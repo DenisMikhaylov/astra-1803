@@ -141,13 +141,13 @@ Type=oneshot
 RemainAfterExit=yes
 
 # Команда запуска
-ExecStart=/bin/bash -c 'echo "⏰ Сервис запущен: $(date)" | logger -t greeting'
+ExecStart=/bin/bash -c 'echo "Сервис запущен: $(date)" | logger -t greeting'
 
 # Команда остановки
-ExecStop=/bin/bash -c 'echo "⏰ Сервис остановлен: $(date)" | logger -t greeting'
+ExecStop=/bin/bash -c 'echo "Сервис остановлен: $(date)" | logger -t greeting'
 
 # Команда перезагрузки
-ExecReload=/bin/bash -c 'echo "⏰ Конфигурация перезагружена: $(date)" | logger -t greeting'
+ExecReload=/bin/bash -c 'echo "Конфигурация перезагружена: $(date)" | logger -t greeting'
 
 # Политика рестарта
 Restart=no
